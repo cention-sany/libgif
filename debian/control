@@ -1,0 +1,89 @@
+Source: giflib
+Section: libs
+Priority: optional
+Maintainer: Daniel Baumann <daniel@debian.org>
+Build-Depends: debhelper (>= 7), dpatch, autotools-dev
+Standards-Version: 3.8.0
+Homepage: http://giflib.sourceforge.net/
+Vcs-Browser: http://git.debian.net/?p=debian/giflib.git
+Vcs-Git: git://git.debian.net/git/debian/giflib.git
+
+Package: giflib-dbg
+Section: libdevel
+Priority: extra
+Architecture: any
+Depends: giflib-tools (= ${binary:Version}), libgif4 (= ${binary:Version}), libgif-dev (= ${binary:Version})
+Description: library for GIF images (debug)
+ GIFLIB is a package of portable tools and library routines for working with GIF
+ images.
+ .
+ This package contains the debugging symbols.
+
+Package: giflib-tools
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libungif-bin (<< 4.1.6)
+Replaces: libungif-bin
+Description: library for GIF images (utilities)
+ GIFLIB is a package of portable tools and library routines for working with GIF
+ images.
+ .
+ This package contains additional utilities.
+
+Package: libgif4
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libungif4g (<< 4.1.6)
+Replaces: libungif4g
+Description: library for GIF images (library)
+ GIFLIB is a package of portable tools and library routines for working with GIF
+ images.
+ .
+ This package contains the library.
+
+Package: libgif-dev
+Section: libdevel
+Architecture: any
+Depends: libgif4 (= ${binary:Version})
+Conflicts: libungif4-dev (<< 4.1.6)
+Replaces: libungif4-dev
+Description: library for GIF images (development)
+ GIFLIB is a package of portable tools and library routines for working with GIF
+ images.
+ .
+ This package contains the development files.
+
+Package: libungif-bin
+Section: utils
+Architecture: all
+Depends: giflib-tools (>= ${source:Version})
+Description: library for GIF images (transitional package)
+ Package to ease upgrading from older libungif-bin packages to
+ the new giflib-tools package.
+ .
+ This package can be purged at anytime once the giflib-tools package has
+ been installed.
+
+Package: libungif4g
+Section: libs
+Architecture: all
+Depends: libgif4 (>= ${source:Version})
+Description: library for GIF images (transitional package)
+ Package to ease upgrading from older libungif4g packages to
+ the new libgif4 package.
+ .
+ This package can be purged at anytime once the libgif4 package has
+ been installed.
+
+Package: libungif4-dev
+Section: libdevel
+Architecture: all
+Depends: libgif-dev (>= ${source:Version})
+Description: library for GIF images (transitional package)
+ Package to ease upgrading from older libungif4-dev packages to
+ the new libgif-dev package.
+ .
+ This package can be purged at anytime once the libgif-dev package has
+ been installed.
