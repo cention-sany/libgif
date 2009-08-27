@@ -1,3 +1,25 @@
+giflib (4.1.6-8) unstable; urgency=low
+
+  * Updating package to standards version 3.8.3.
+  * Removing vcs fields.
+  * Orphaning package.
+
+ -- Daniel Baumann <daniel@debian.org>  Thu, 27 Aug 2009 07:25:21 +0200
+
+giflib (4.1.6-7) unstable; urgency=low
+
+  * Replacing obsolete dh_clean -k with dh_prep.
+  * Updating section of the debug package.
+  * Using quilt rather than dpatch.
+  * Using correct rfc-2822 date formats in changelog.
+  * Updating package to standards version 3.8.2.
+  * Removing old transitional packages.
+  * Adding misc depends to debug and development package.
+  * Updating year in copyright file.
+  * Minimizing rules file.
+
+ -- Daniel Baumann <daniel@debian.org>  Mon, 27 Jul 2009 13:12:16 +0200
+
 giflib (4.1.6-6) unstable; urgency=low
 
   * Updating vcs fields in control file.
@@ -28,14 +50,14 @@ giflib (4.1.6-4) unstable; urgency=high
   * Adding patch from libungif to fix CVE-2005-2974 and CVE-2005-3350.
   * Updating upstream homepage (Closes: #469561).
 
- -- Daniel Baumann <daniel@debian.org>  Fri,  7 Mar 2008 14:40:00 +0100
+ -- Daniel Baumann <daniel@debian.org>  Fri, 07 Mar 2008 14:40:00 +0100
 
 giflib (4.1.6-3) unstable; urgency=high
 
   * Adding transitional packages to kick libungif out of the archive by force.
   * Removing watch file (Closes: #453592).
 
- -- Daniel Baumann <daniel@debian.org>  Wed,  6 Feb 2008 23:22:00 +0100
+ -- Daniel Baumann <daniel@debian.org>  Wed, 06 Feb 2008 23:22:00 +0100
 
 giflib (4.1.6-2) unstable; urgency=low
 
@@ -74,7 +96,7 @@ giflib (4.1.4-1) unstable; urgency=low
     - added watch file.
     - added debug package.
 
- -- Daniel Baumann <daniel@debian.org>  Thu,  2 Nov 2006 20:39:00 +0100
+ -- Daniel Baumann <daniel@debian.org>  Thu, 02 Nov 2006 20:39:00 +0100
 
 giflib (3.0-12) unstable; urgency=low
 
@@ -126,7 +148,7 @@ giflib (3.0-7) unstable; urgency=low
   * New maintainer (closes: #139387)
   * Upgraded to current standards version (closes: #133331)
 
- -- Pawel Wiecek <coven@debian.org>  Tue,  9 Apr 2002 14:22:35 +0200
+ -- Pawel Wiecek <coven@debian.org>  Tue, 09 Apr 2002 14:22:35 +0200
 
 giflib (3.0-6) unstable; urgency=low
 
@@ -143,7 +165,7 @@ giflib (3.0-5.2) unstable; urgency=low
   * Added shlibs control file so that packages compiled with giflib can
     also be used with libungif.
 
- -- Jim Pick <jim@jimpick.com>  Sun,  5 Jul 1998 22:46:51 -0700
+ -- Jim Pick <jim@jimpick.com>  Sun, 05 Jul 1998 22:46:51 -0700
 
 giflib (3.0-5.1) unstable frozen; urgency=low
 
