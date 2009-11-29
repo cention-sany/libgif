@@ -1,3 +1,14 @@
+giflib (4.1.6-9) unstable; urgency=low
+
+  * New Maintainer (Closes: #543841)
+  * Adding watch file (Closes: #453530)
+  * Converting to source package "3.0 (quilt)".
+  * Correcting debhelper version dependency.
+  * Adding Vcs fields.
+  * Adding manpages.
+
+ -- Thibaut GRIDEL <tgridel@free.fr>  Sun, 29 Nov 2009 20:34:13 +0100
+
 giflib (4.1.6-8) unstable; urgency=low
 
   * Updating package to standards version 3.8.3.
