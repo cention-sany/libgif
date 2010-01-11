@@ -18,7 +18,7 @@ s/<TITLE>\(.*\)/.TH \1 1 "giflib-tools"/g
 
 /<CENTER><H1>/ {
  N
- s/\n/ \\- /
+ s/\n/ - /
 } 
 
  s/<CENTER><H1>/.SH NAME\
@@ -67,6 +67,7 @@ s/<em>//g
 s/<UL>//g
 s/<HR>//g
 
+s/-/\\-/g
 s/&lt;/</g
 s/&gt;/>/g
 s/&quot;/""/g

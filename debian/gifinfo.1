@@ -1,7 +1,7 @@
 .\" Process this file with
 .\" groff -man -Tascii foo.1
 .\"
-.TH gifinfo 1 "giflib-tools"
+.TH gifinfo 1 "giflib\-tools"
 
 .SH NAME
 gifinfo \- 
@@ -9,18 +9,18 @@ Program to display information (size and comments) in GIF file
 
 .SH USAGE
 
-.B gifinfo [-f Format] [-h] GifFile
+.B gifinfo [\-f Format] [\-h] GifFile
 
 .SH OPTIONS
 
-.IP "[-f format]"
+.IP "[\-f format]"
 
-Format of the output string. Fields are \\h - height, \\w - width,
- \\c - comment, \\f - file name.
+Format of the output string. Fields are \\h \(hy height, \\w \(hy width,
+ \\c \(hy comment, \\f \(hy file name.
 
- Example: -f 'Image \\f:\\n Size: \\wx\\h\\n Comment: \\c\\n'
+ Example: \-f 'Image \\f:\\n Size: \\wx\\h\\n Comment: \\c\\n'
 
-.IP [-h]
+.IP [\-h]
 
 Print one line of command line help, similar to Usage above.
 
