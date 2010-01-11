@@ -33,7 +33,6 @@ Description: library for GIF images (utilities)
  This package contains additional utilities.
 
 Package: libgif4
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Provides: libungif4g
