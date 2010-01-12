@@ -4,7 +4,8 @@
 	dh ${@} 
 
 override_dh_auto_configure:
-	dh_auto_configure --disable-x11
+	autoreconf -fi
+	dh_auto_configure -- --disable-x11 --disable-rpath
 
 override_dh_auto_install:
 	dh_auto_install
