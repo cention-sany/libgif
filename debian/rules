@@ -3,6 +3,27 @@
 %:
 	dh ${@} 
 
+override_dh_auto_clean:
+	[ ! -f Makefile ] || make maintainer-clean
+	dh_auto_clean
+	rm -f INSTALL \
+	Makefile.in \
+	aclocal.m4 \
+	compile \
+	config \
+	guess \
+	config.h.in \
+	config.sub \
+	configure \
+	depcomp \
+	doc/Makefile.in \
+	install-sh \
+	lib/Makefile.in \
+	ltmain.sh \
+	missing \
+	pic/Makefile.in \
+	util/Makefile.in
+
 override_dh_auto_configure:
 	autoreconf -fi
 	dh_auto_configure -- --disable-x11 --disable-rpath
