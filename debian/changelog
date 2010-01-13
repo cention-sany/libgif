@@ -1,3 +1,21 @@
+giflib (4.1.6-9) unstable; urgency=low
+
+  * New Maintainer (Closes: #543841)
+  * Adding watch file (Closes: #453530)
+  * Converting to source package "3.0 (quilt)".
+  * Correcting debhelper version dependency.
+  * Adding Vcs fields.
+  * Adding manpages.
+  * Removing duplicate Section field.
+  * Correctly hyphenate man pages.
+  * Fixing spelling typos.
+  * Adding symbols file.
+  * Autoreconfiguring to fix rpath.
+  * Cleaning what autoreconf did.
+  * Registering html documentation.
+
+ -- Thibaut GRIDEL <tgridel@free.fr>  Wed, 13 Jan 2010 21:22:00 +0100
+
 giflib (4.1.6-8) unstable; urgency=low
 
   * Updating package to standards version 3.8.3.
