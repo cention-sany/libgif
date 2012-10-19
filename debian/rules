@@ -26,7 +26,8 @@ override_dh_auto_clean:
 
 override_dh_auto_configure:
 	autoreconf -fi
-	dh_auto_configure -- --disable-x11 --disable-rpath
+	dh_auto_configure -- --disable-x11 --disable-rpath  \
+	     $(shell dpkg-buildflags --export=configure)
 
 override_dh_auto_install:
 	dh_auto_install
