@@ -1,3 +1,9 @@
+giflib (4.1.6-10) UNRELEASED; urgency=low
+
+  * Fixing fprintf issues by YunQiang Su.
+
+ -- Thibaut Gridel <tgridel@free.fr>  Tue, 16 Oct 2012 23:31:11 +0200
+
 giflib (4.1.6-9.1) unstable; urgency=low
 
   * Non-maintainer upload.
