@@ -1,9 +1,10 @@
-giflib (4.1.6-10) UNRELEASED; urgency=low
+giflib (4.1.6-10) unstable; urgency=low
 
   * Fixing fprintf issues by YunQiang Su.
-  * Hardening build flags (Closes #673660).
+  * Hardening build flags (Closes: #673660).
+  * Updating Standards (no change).
 
- -- Thibaut Gridel <tgridel@free.fr>  Tue, 16 Oct 2012 23:31:11 +0200
+ -- Thibaut Gridel <tgridel@free.fr>  Fri, 19 Oct 2012 23:03:46 +0200
 
 giflib (4.1.6-9.1) unstable; urgency=low
 
