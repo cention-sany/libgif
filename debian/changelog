@@ -2,6 +2,7 @@ giflib (4.1.6-11) UNRELEASED; urgency=low
 
   * Enable Multiarch (Closes: #647497).
   * Update to debhelper 9 and bump Standards to 3.9.4.
+  * Honor the LAFileRemoval goal.
 
  -- Thibaut Gridel <tgridel@free.fr>  Tue, 03 Dec 2013 22:24:38 +0100
 
