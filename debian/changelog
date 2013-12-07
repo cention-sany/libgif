@@ -1,10 +1,13 @@
-giflib (4.1.6-11) UNRELEASED; urgency=low
+giflib (4.1.6-11) unstable; urgency=low
 
+  * Remove Provides: libungif4g.
   * Enable Multiarch (Closes: #647497).
+  * depend on dh-autoreconf.
   * Update to debhelper 9 and bump Standards to 3.9.4.
   * Honor the LAFileRemoval goal.
+  * Update git links.
 
- -- Thibaut Gridel <tgridel@free.fr>  Tue, 03 Dec 2013 22:24:38 +0100
+ -- Thibaut Gridel <tgridel@free.fr>  Sat, 07 Dec 2013 18:40:27 +0100
 
 giflib (4.1.6-10) unstable; urgency=low
 
